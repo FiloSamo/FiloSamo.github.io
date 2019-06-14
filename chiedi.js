@@ -28,6 +28,4 @@ function riceviDati(data){
   if(suono === 'C'){
     document.write("via   ");
   }
-
- );
 }
