@@ -13,7 +13,7 @@ $(document).ready(function(e) {
   //Imposta una funzione se la richiesta ha successo
   success : function(data) {riceviDati(data)}
  });
- });
+ };
 });
 
 function riceviDati(data){
@@ -28,6 +28,6 @@ function riceviDati(data){
   if(suono === 'C'){
     document.write("via   ");
   }
-  
+
  );
 }
