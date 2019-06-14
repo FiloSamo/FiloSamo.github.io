@@ -8,5 +8,4 @@
  header('Content-Type : application/json');
   $dato = $informazione;
   print json_encode($dato);
-  $dato = 'D';
 ?>
