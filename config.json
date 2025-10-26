@@ -5,12 +5,12 @@
   "userimg": "https://avatars.githubusercontent.com/u/48647121?v=4",
   "sort": "created",
   "order": "asc",
-  "includeFork": false,
+  "includeFork": true,
   "theme": "dark.css",
   "types": [
    "owner"
   ],
-  "linkedin": "https://www.linkedin.com/in/filippo-samor%C3%AC-9bbaa4174/",
+  "linkedin": "filippo-samorì-9bbaa4174",
   "twitter": null,
   "medium": null,
   "dribbble": null
