@@ -1,220 +1,179 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FiloSamo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/48647121?v=4" type="image/png"></head>
+    <title>Filippo Samorì - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    <div id="profile">
-      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/48647121?v=4) center;"></div>
-      <div id="username"><span style="display:block;">Filippo Samorì</span><a href="https://github.com/FiloSamo">@FiloSamo</a></div>
-      <div id="userbio" style="display: block;">Master’s student in Automation Engineering at the University of Bologna. Passionate about Robotics.</div>
-      <div id="about">
-                <span style="display:block;"><i class="fas fa-users"></i> &nbsp; University of Bologna</span>
-                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Bologna</span>
-                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-                <div class="socials">
-                <span style="display:none !important;"><a href="https://www.twitter.com/null" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-                <span style="display:block;"><a href="https://www.linkedin.com/in/filippo-samorì-9bbaa4174/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+<body>
+    <div class="container">
+        <div class="hero-wrapper">
+            <header class="profile-section">
+                <img src="fig/profile.png" alt="Filippo Samorì" class="profile-img">
+                <h1 class="name">Filippo Samorì</h1>
+                <p class="tagline">Automation Engineer</p>
+                <a href="Filippo Samorì - cv.pdf" download class="btn">Download CV</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/filippo-samor%C3%AC-9bbaa4174/" target="_blank"
+                        aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/FiloSamo" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="mailto:filippo.samori@outlook.it" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
                 </div>
+            </header>
+
+            <section class="section" id="about">
+                <h2 class="section-title">About</h2>
+                <p class="section-content">
+                    My name is Filippo Samorì. I'm a Master’s student in Automation Engineering at the University of
+                    Bologna. I'm a passionate
+                    student with a strong interest in robotics and automation. I'm always looking for new opportunities
+                    to apply my knowledge and skills in real-world projects. I'm currently working as a Robotic
+                    Researcher
+                    Intern at Eurecat, Barcelona, Spain.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Education</h3>
+                    <p class="section-content">
+                        <strong>Master’s degree in Automation Engineering</strong><br>
+                        University of Bologna | 2023 - Present
+                    </p>
+                    <p class="section-content" style="margin-top: 1rem;">
+                        <strong>Bachelor’s degree in Automation Engineering</strong><br>
+                        University of Bologna | 2020 - 2023<br>
+                        <span style="font-size: 0.9rem; color: #888;">110 cum laude - Thesis: Modelling and Simulation
+                            of an
+                            Excavator Arm</span>
+                    </p>
                 </div>
-    </div>
-    <div id="display">
-      <div id="work">
-        <h1>Work.</h1>
-        <div class="projects" id="work_section">
-                        <a href="https://github.com/FiloSamo/FiloSamo" target="_blank">
-                        <section>
-                            <div class="section_title">FiloSamo</div>
-                            <div class="about_section">
-                            <span style="display:block;">Master’s student in Automation Engineering at the University of Bologna Passionate about robotics, control systems, and AI-driven automation Always exploring new projects and sharing my work here on GitHub!</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/FiloSamo/Barcode_detection_algorithm" target="_blank">
-                        <section>
-                            <div class="section_title">Barcode_detection_algorithm</div>
-                            <div class="about_section">
-                            <span style="display:block;">Project aimed at localizing a black-and-white barcode and computing related metrics. Developed for the Computer Vision course at the University of Bologna.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/FiloSamo/CLI_snake_game" target="_blank">
-                        <section>
-                            <div class="section_title">CLI_snake_game</div>
-                            <div class="about_section">
-                            <span style="display:block;">Small snake game running in the command prompt or powershell in windows.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/FiloSamo/optcon_project" target="_blank">
-                        <section>
-                            <div class="section_title">optcon_project</div>
-                            <div class="about_section">
-                            <span style="display:block;">Trajectory planning and Control of a 2-dof under actuated robotic arm. University project for the course of Optimal Control.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/FiloSamo/ORBSLAM3_CRAZYFLIE" target="_blank">
-                        <section>
-                            <div class="section_title">ORBSLAM3_CRAZYFLIE</div>
-                            <div class="about_section">
-                            <span style="display:block;">Implementation of ORB_SLAM3 with the crazyflie drone. ORB_SLAM3 is a simultaneous localization and mapping C++ library. We developed a ROS2 wrapping and We implemented the localization of a Crazyflie drone in real time.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/FiloSamo/Colorization_OxfordFlowers102" target="_blank">
-                        <section>
-                            <div class="section_title">Colorization_OxfordFlowers102</div>
-                            <div class="about_section">
-                            <span style="display:block;">Deep learning project for conditional colouring of black and white images. I used tensorflow and I implemented a U-net architecture.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Jupyter Notebook</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/FiloSamo/Human_detection_and_localization" target="_blank">
-                        <section>
-                            <div class="section_title">Human_detection_and_localization</div>
-                            <div class="about_section">
-                            <span style="display:block;">Small project where a Robot must detect and localize humans while It is exploring the environment. The localization is performed with an Extended Kalman Filter.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/FiloSamo/UR5_DigitalTwin" target="_blank">
-                        <section>
-                            <div class="section_title">UR5_DigitalTwin</div>
-                            <div class="about_section">
-                            <span style="display:block;">Universal Robot 5 modelling and simulation using 20-sim. The model has been developed using bond graph and with a modular architecture.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a></div>
-      </div>
-      <div id="forks" style="display:none;">
-        <h1>Forks.</h1>
-        <div class="projects" id="forks_section"></div>
-      </div>
-      <div id="blog_section">
-        <h1>Blog.</h1>
-        <div id="blogs"></div>
-      </div>
-      <div id="footer">
-        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
-      </div>
-    </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
+                <div style="margin-top: 2rem;">
+                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Hard Skills</h3>
+                    <p class="section-content">
+                        C, C++, Python, TensorFlow, ROS 2, Linux, Matlab, OpenCV, 3D printing, CAD (Creo parametric)
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <section class="section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <h3 class="job-title">Robotic Researcher Intern</h3>
+                <p class="company">Eurecat, Barcelona, Spain | Oct 2025 - Present</p>
+                <p class="job-desc">Working on a collaborative cell for human-robot interaction, enhanced with projected
+                    augmented reality. My role involves implementing a dynamic planner using the MoveIt Framework in ROS
+                    2
+                    for a robotic arm, as well as building a projection framework to visualize robot trajectories and
+                    additional information.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3 class="job-title">Librarian</h3>
+                <p class="company">Communication Science Library, Bologna, Italy | Jan 2024 - Dec 2024</p>
+                <p class="job-desc">Circulation desk, overseeing book check-outs, returns, and reservations.</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="job-title">R&D Intern</h3>
+                <p class="company">Romagnatech, Forlì, Italy | July 2019 - Aug 2019</p>
+                <p class="job-desc">Conducted research and contributed to the development of an electric scooter.</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="job-title">R&D Intern</h3>
+                <p class="company">Robotikos Mokykla, Vilnius, Lithuania | Oct 2018 - Nov 2018</p>
+                <p class="job-desc">Erasmus Internship. Developed a smart wardrobe where kids could store their
+                    laptops.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="fig/demo.gif" alt="Slam implementation" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">SLAM in a Crazyflie drone using ORB_SLAM3</h3>
+                        <p class="project-desc">Implemented a SLAM algorithm on a Crazyflie drone using ORB_SLAM3. The
+                            architecture consisted of a server running ROS 2 with ORB_SLAM3 and the drone transmitting
+                            data via Bluetooth and Wi-Fi, achieving real-time performance.
+                        </p>
+                        <a href="https://github.com/FiloSamo/ORBSLAM3_CRAZYFLIE" target="_blank"
+                            class="project-link">View
+                            Code</a>
                     </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
-    </script>
+                </div>
+                <div class="project-card">
+                    <img src="fig/colorization.png" alt="Colorization" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Colorization with Deep Learning</h3>
+                        <p class="project-desc">Implemented a colorization algorithm using TensorFlow. Designed and
+                            trained
+                            a Deep Neural Network based on a U-Net architecture to colorize grayscale images.</p>
+                        <a href="https://github.com/FiloSamo/Colorization_OxfordFlowers102" target="_blank"
+                            class="project-link">View
+                            Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="fig/ur5e.png" alt="UR5 Digital Twin" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">UR5 Digital Twin</h3>
+                        <p class="project-desc">Universal Robot 5 modelling and simulation using 20-sim. The model was
+                            developed using a modular architecture based on bond graphs. Implemented a control law to
+                            operate the robot and validate simulation behavior.</p>
+                        <a href="https://github.com/FiloSamo/UR5_DigitalTwin" target="_blank" class="project-link">View
+                            Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="fig/human_detection.png" alt="Human Detection and Localization" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Human Detection and Localization</h3>
+                        <p class="project-desc">A project focused on detecting and localizing humans during robotic
+                            exploration. Used YOLOv11 for detection and an Extended Kalman Filter for localization.
+                        </p>
+                        <a href="https://github.com/FiloSamo/Human_detection_and_localization" target="_blank"
+                            class="project-link">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <script>
-      const magicProjectsGrid = new MagicGrid({
-        container: "#work_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
+        <footer class="footer">
 
-      const magicForksGrid = new MagicGrid({
-        container: "#forks_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
+            <p class="copyright">&copy; 2025 Filippo Samorì. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
 
-      $("document").ready(() => {
-        magicProjectsGrid.listen();
-        magicForksGrid.listen();
-      });
-    </script>
-  
-
-</body></html>
+</html>
