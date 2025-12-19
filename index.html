@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="fig/web.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -92,6 +94,15 @@
                 </div>
             </section>
         </div>
+
+        <section class="container" id="cartoon-img">
+            <div class="cartoon-map-wrapper">
+                <img src="fig/cartoon.png" alt="Filippo Samorì" class="img-cartoon">
+                <div class="map-widget">
+                    <div id="map-minimal"></div>
+                </div>
+            </div>
+        </section>
 
         <section class="section" id="experience">
             <h2 class="section-title">Experience</h2>
@@ -182,6 +193,8 @@
             <p class="copyright">&copy; 2025 Filippo Samorì. All rights reserved.</p>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
