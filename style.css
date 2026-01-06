@@ -37,6 +37,12 @@ body {
 }
 
 /* Navigation */
+.nav-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
 .main-nav {
     position: fixed;
     top: 0;
