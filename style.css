@@ -227,6 +227,30 @@ body {
     color: var(--secondary-text);
 }
 
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 50px; /* Rounded rectangle/pill shape */
+    font-size: 0.95rem;
+    color: var(--secondary-text);
+    background-color: transparent;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-tag:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
 /* Experience */
 .experience-item {
     margin-bottom: 1rem;
@@ -383,4 +407,21 @@ body {
     .project-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Video Section */
+.video-container {
+    width: 100%;
+    margin-top: 3rem;
+    overflow: hidden;
+    line-height: 0; /* Removes potential space below video */
+}
+
+.bottom-video {
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 8px; /* Optional: adds a slight modern touch, can serve as 'clean' look */
 }
