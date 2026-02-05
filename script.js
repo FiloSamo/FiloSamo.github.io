@@ -9,3 +9,22 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 }).addTo(map);
 
 L.marker([41.396, 2.164]).addTo(map).bindPopup("<b>Barcelona</b><br>Currently here!").openPopup();
+
+// Timeline Interaction
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    timelineItems.forEach(item => {
+        const content = item.querySelector('.timeline-content');
+        
+        content.addEventListener('click', (e) => {
+            // Prevent toggling if clicking a link
+            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                return;
+            }
+            
+            // Toggle active class
+            item.classList.toggle('active');
+        });
+    });
+});
