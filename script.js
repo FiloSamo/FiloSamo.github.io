@@ -2,13 +2,21 @@ var map = L.map('map-minimal', {
     scrollWheelZoom: false
 }).setView([41.396, 2.164], 10);
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 20
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-L.marker([41.396, 2.164]).addTo(map).bindPopup("<b>Barcelona</b><br>Currently here!").openPopup();
+var redIcon = new L.Icon({
+  iconUrl: 'fig/marker-icon-2x-red.png',
+  shadowUrl: 'fig/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+L.marker([41.396, 2.164],{icon: redIcon}).addTo(map).bindPopup("<b>Barcelona</b><br>Currently here!").openPopup();
 
 // Timeline Interaction
 document.addEventListener('DOMContentLoaded', () => {
