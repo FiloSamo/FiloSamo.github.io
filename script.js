@@ -1,6 +1,6 @@
 var map = L.map('map-minimal', {
     scrollWheelZoom: false
-}).setView([41.396, 2.164], 10);
+}).setView([44.222006944665544, 12.040636507700208], 7);
 
 L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -16,7 +16,7 @@ var redIcon = new L.Icon({
   shadowSize: [41, 41]
 });
 
-L.marker([41.396, 2.164],{icon: redIcon}).addTo(map).bindPopup("<b>Barcelona</b><br>Currently here!").openPopup();
+L.marker([44.222006944665544, 12.040636507700208],{icon: redIcon}).addTo(map).bindPopup("<b>Forlì</b><br>Currently here!").openPopup();
 
 // Timeline Interaction
 document.addEventListener('DOMContentLoaded', () => {

@@ -48,7 +48,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffffe8;
+    background-color: #eeeeee;
     /* Slight grey contrast */
     z-index: 1000;
     padding: 1.5rem 0;
@@ -541,7 +541,7 @@ body {
 }
 
 .timeline-item.active .timeline-details {
-    max-height: 800px; /* Large enough to fit content */
+    max-height: 1000px; /* Large enough to fit content */
     opacity: 1;
     margin-top: 1.5rem;
 }
@@ -551,7 +551,6 @@ body {
     height: 250px;
     object-fit: cover;
     border-radius: 4px;
-    margin-bottom: 1rem;
     border: 1px solid #eee;
 }
 
